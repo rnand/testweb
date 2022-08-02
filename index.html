@@ -4,7 +4,7 @@
   <script>
     let h1Tag = document.getElementById("firstH1");
     
-    let qtKanye = fetch("https://api.kanye.rest/");
+    let qtKanye = await fetch("https://api.kanye.rest/");
     h1Tag.innerText = qtKanye;                      
                         
   </script>
