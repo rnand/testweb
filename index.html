@@ -2,10 +2,12 @@
 <body>
 <h1 id="firstH1">Hello World</h1>
   <script>
-    let h1Tag = document.getElementById("firstH1");
+    function changeH1(){
+      let h1Tag = document.getElementById("firstH1");
     
-    let qtKanye = await fetch("https://api.kanye.rest/");
-    h1Tag.innerText = qtKanye;                      
+      let qtKanye = await fetch("https://api.kanye.rest/");
+      h1Tag.innerText = qtKanye.quote;
+    }
                         
   </script>
 </body>
