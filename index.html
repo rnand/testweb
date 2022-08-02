@@ -6,7 +6,8 @@
       
     
       let qtKanye = await fetch("https://api.kanye.rest/");
-      console.log(qtKanye);
+      const qtJson = qtKanye.json();
+      console.log(qtJson);
      
       let h1Tag = document.getElementById("firstH1");
       h1Tag.innerText = qtKanye.quote;
