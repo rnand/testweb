@@ -14,7 +14,13 @@
     }
     
     changeH1().then(res =>{
-      console.log(res.quote) });  
+      
+      let h1Tag = document.getElementById("firstH1");
+      h1Tag.innerText = res.quote;
+    
+    });  
+    
+    
     
   </script>
 </body>
