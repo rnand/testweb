@@ -3,7 +3,10 @@
 <h1 id="firstH1">Hello World</h1>
   <script>
     let h1Tag = document.getElementById("firstH1");
-    h1Tag.innerText = "Hello js";
+    
+    let qtKanye = fetch("https://api.kanye.rest/");
+    h1Tag.innerText = qtKanye;                      
+                        
   </script>
 </body>
 </html>
