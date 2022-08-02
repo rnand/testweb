@@ -3,12 +3,14 @@
 <h1 id="firstH1">Hello World</h1>
   <script>
     async function changeH1(){
-      let h1Tag = document.getElementById("firstH1");
+      
     
       let qtKanye = await fetch("https://api.kanye.rest/");
-      h1Tag.innerText = qtKanye;
+      
     }
-    changeH1();                    
+    let res = changeH1();  
+    let h1Tag = document.getElementById("firstH1");
+    h1Tag.innerText = qtKanye.quote;
   </script>
 </body>
 </html>
