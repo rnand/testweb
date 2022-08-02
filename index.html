@@ -6,11 +6,12 @@
       
     
       let qtKanye = await fetch("https://api.kanye.rest/");
+      return qtKanye;
       
     }
     let res = changeH1();  
     let h1Tag = document.getElementById("firstH1");
-    h1Tag.innerText = qtKanye.quote;
+    h1Tag.innerText = res.quote;
   </script>
 </body>
 </html>
