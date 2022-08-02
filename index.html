@@ -8,15 +8,14 @@
       let qtKanye = await fetch("https://api.kanye.rest/");
       console.log(qtKanye);
      
-      return qtKanye.json();
+      let h1Tag = document.getElementById("firstH1");
+      h1Tag.innerText = qtKanye.quote;
           
       
     }
     
-    let res = changeH1();  
-    console.log(res);
-    let h1Tag = document.getElementById("firstH1");
-    h1Tag.innerText = res.quote;
+    hangeH1();  
+    
   </script>
 </body>
 </html>
